@@ -1,0 +1,49 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-10T12:26:36.654+05:30  INFO 12888 --- [medinear] [           main] com.medinear.MedinearApplication         : Starting MedinearApplication v0.0.1-SNAPSHOT using Java 21.0.10 with PID 12888 (C:\Users\lenovo\OneDrive\Desktop\pbl\target\medinear-0.0.1-SNAPSHOT.jar started by lenovo in C:\Users\lenovo\OneDrive\Desktop\pbl)
+2026-10-10T12:26:36.662+05:30  INFO 12888 --- [medinear] [           main] com.medinear.MedinearApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T12:26:37.713+05:30  INFO 12888 --- [medinear] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T12:26:37.763+05:30  INFO 12888 --- [medinear] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+2026-10-10T12:26:38.541+05:30  INFO 12888 --- [medinear] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-10-10T12:26:38.560+05:30  INFO 12888 --- [medinear] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T12:26:38.560+05:30  INFO 12888 --- [medinear] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-10T12:26:38.598+05:30  INFO 12888 --- [medinear] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1809 ms
+2026-10-10T12:26:38.827+05:30  INFO 12888 --- [medinear] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T12:26:38.909+05:30  INFO 12888 --- [medinear] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-10T12:26:39.494+05:30  INFO 12888 --- [medinear] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T12:26:39.538+05:30  INFO 12888 --- [medinear] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T12:26:41.460+05:30  INFO 12888 --- [medinear] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3245efdb
+2026-10-10T12:26:41.460+05:30  INFO 12888 --- [medinear] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T12:26:41.671+05:30  WARN 12888 --- [medinear] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-10-10T12:26:42.370+05:30  INFO 12888 --- [medinear] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://aws-0-ap-northeast-2.pooler.supabase.com:5432/postgres?sslmode=require]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.6
+	Default catalog/schema: postgres/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T12:26:43.416+05:30  INFO 12888 --- [medinear] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T12:26:45.127+05:30  INFO 12888 --- [medinear] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T12:26:45.210+05:30  INFO 12888 --- [medinear] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T12:26:46.607+05:30  INFO 12888 --- [medinear] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-10-10T12:26:46.610+05:30  WARN 12888 --- [medinear] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-10-10T12:26:47.745+05:30  INFO 12888 --- [medinear] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-10-10T12:26:47.777+05:30  INFO 12888 --- [medinear] [           main] com.medinear.MedinearApplication         : Started MedinearApplication in 11.848 seconds (process running for 12.54)
+2026-10-10T12:26:47.960+05:30  INFO 12888 --- [medinear] [           main] com.medinear.service.DataInitializer     : Checking MediNear database initialization...
+2026-10-10T12:26:49.298+05:30  INFO 12888 --- [medinear] [           main] com.medinear.service.DataInitializer     : MediNear database initialization verified successfully.
+2026-10-10T12:26:49.460+05:30  INFO 12888 --- [medinear] [0.0-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T12:26:49.460+05:30  INFO 12888 --- [medinear] [0.0-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T12:26:49.460+05:30  INFO 12888 --- [medinear] [0.0-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

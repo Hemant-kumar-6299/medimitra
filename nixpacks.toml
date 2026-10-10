@@ -1,0 +1,5 @@
+# Force Java — ignore frontend/ Vite so Nixpacks does not start Node/Caddy.
+providers = ["java"]
+
+[variables]
+NIXPACKS_JDK_VERSION = "17"

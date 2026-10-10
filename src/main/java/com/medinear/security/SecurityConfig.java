@@ -68,7 +68,9 @@ public class SecurityConfig {
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/register", "/api/auth/login", "/api/test/**").permitAll()
+                // Health checks used by Railway/Render must stay public
+                .requestMatchers("/", "/api/test/**").permitAll()
+                .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
                 .requestMatchers("/api/pharmacies/my/**").authenticated()
                 .requestMatchers(HttpMethod.GET, "/api/medicines/**", "/api/pharmacies/**").permitAll()
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")

@@ -1,0 +1,9 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+# App is healthy here (permitAll). Default "/" returns 401 and looks like a crash.
+healthcheckPath = "/api/test/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
